@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineart - Comunicação visual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/nav.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img class="nav-logo" src="img/Logo.png" alt="" width="140px" height="30px">
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portifolio">Portifólio</a>
+                </li>
+                <li class="nav-item">
+                </li>
+            </ul>
+
+            <button class="btn-default">Solicite seu orçamento</button>
+
+            <button id="mobile_btn" onclick="mostrarNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portifolio">Portifólio</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">Solicite seu orçamento</button>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div id="home_info">
+                <h1>Comunicação Visual Profissional</h1>
+                <h2>Transformamos sua marca em destaque visual.</h2>
+                <p>
+                    A Lineart desenvolve soluções em comunicação visual para empresas que desejam mais visibilidade, modernidade e impacto. 
+                    Trabalhamos com fachadas, toldos, letras caixa, adesivação, totens e projetos personalizados para valorizar o seu negócio.
+                </p>
+
+                <button class="btn-default">Solicite seu orçamento</button>
+            </div>
+
+            <div id="home_img">
+                <img src="img/HomeImg.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
