@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/nav.css">
     <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/sobre.css">
 </head>
 <body>
     <header>
@@ -31,7 +32,7 @@
                 </li>
             </ul>
 
-            <button class="btn-default">Solicite seu orçamento</button>
+            <a class="btn-default" href="https://wa.me/555192369100" target="_blank">Solicite seu orçamento</a>
 
             <button id="mobile_btn" onclick="mostrarNavMobile()">
                 <i class="fa-solid fa-bars"></i>
@@ -54,24 +55,47 @@
                 </li>
             </ul>
 
-            <button class="btn-default">Solicite seu orçamento</button>
+            <a class="btn-default" href="https://wa.me/555192369100" target="_blank">Solicite seu orçamento</a>
         </div>
     </header>
     <main>
         <section id="home">
             <div id="home_info">
-                <h1>Comunicação Visual Profissional</h1>
-                <h2>Transformamos sua marca em destaque visual.</h2>
-                <p>
+                <h1 class="home-titulo">Comunicação Visual Profissional</h1>
+                <h2 class="home-subtitulo">Transformamos sua marca em destaque visual.</h2>
+                <p class="home-descricao">
                     A Lineart desenvolve soluções em comunicação visual para empresas que desejam mais visibilidade, modernidade e impacto. 
                     Trabalhamos com fachadas, toldos, letras caixa, adesivação, totens e projetos personalizados para valorizar o seu negócio.
                 </p>
 
-                <button class="btn-default">Solicite seu orçamento</button>
+                <a class="btn-default btn-default-modificado" href="https://wa.me/555192369100" target="_blank">Solicite seu orçamento</a>
+
+                <div class="home_redes-sociais">
+                    <a class="icon-link" href="https://wa.me/555192369100" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="icon-link" href="https://www.instagram.com/lineart.visual/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="icon-link" href="https://www.google.com/maps/place/RC+PLACAS/data=!4m2!3m1!1s0x0:0x45a7a28aa4a93e39?sa=X&ved=1t:2428&ictx=111" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                </div>
             </div>
 
             <div id="home_img">
                 <img src="img/HomeImg.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div id="sobre_img">
+                <img src="img/SobreImg.png" alt="">
+            </div>
+
+            <div id="sobre_info">
+                <div>
+                    <h1 class="sobre-titulo">Seja Bem-Vindo</h1>
+                <h2 class="sobre-subtitulo">Somos a Lineart</h2>
+                <p class="sobre-descricao">
+                    Especialistas em fachadas, letras caixa, adesivos, revestimentos e soluções que valorizam a identidade da sua marca. 
+                    Trabalhamos com qualidade, criatividade e atenção aos detalhes para transformar ideias em projetos que geram destaque e fortalecem a presença do seu negócio.
+                </p>
+                </div>
             </div>
         </section>
     </main>
