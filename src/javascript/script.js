@@ -27,7 +27,7 @@ const secoes = document.querySelectorAll('main section');
 
 const opçõesObserver = {
     root: null,
-    rootMargin: '-20% 0px -60% 0px',
+    rootMargin: '-40% 0px -40% 0px',
     threshold: 0
 };
 
