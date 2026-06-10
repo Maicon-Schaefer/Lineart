@@ -56,6 +56,15 @@
         padding: 40px;
     }
 
+    .item-img{
+        width: 70%;
+    }
+
+    .item-img img{
+        width: 500px;
+        height: 400px;
+    }
+
     .item-servico h2{
         margin: 0;
         padding: 0;
@@ -64,6 +73,20 @@
     .item-servico p{
         display: none;
     }
+}
 
+@media screen and (max-width: 740px){
+    .item-img, 
+    .item-info{
+        width: 100%;
+    }
 
+    .item-img img{
+        width: 300px;
+        height: 250px;
+    }
+
+    .item-info h2{
+        font-size: 1.8em;
+    }
 }

@@ -3,6 +3,7 @@ header{
     padding: 28px 8%;
     background-color: rgb(30, 167, 167);
     position: fixed;
+    z-index: 9999;
     box-shadow: 0 2px 10px rgba(0,0,0,.10)
 }
 
