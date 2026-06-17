@@ -49,3 +49,35 @@ const observer = new IntersectionObserver((entries) => {
 }, opçõesObserver);
 
 secoes.forEach(secao => observer.observe(secao));
+
+const duracaoAnimacao = window.innerWidth < 768 ? 500 : 2000;
+
+ScrollReveal().reveal('#home_info', {
+    origin: 'left',
+    duration: 2000,
+    distance: '2%'
+})
+
+ScrollReveal().reveal('#sobre_info', {
+    origin: 'right',
+    duration: 2000,
+    distance: '20%'
+})
+
+ScrollReveal().reveal('.l', {
+    origin: 'right',
+    duration: duracaoAnimacao,
+    distance: '10%'
+})
+
+ScrollReveal().reveal('.r', {
+    origin: 'left',
+    duration: duracaoAnimacao,
+    distance: '10%'
+})
+
+ScrollReveal().reveal('#portfolio', {
+    origin: 'left',
+    duration: 2000,
+    distance: '2%'
+})

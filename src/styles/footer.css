@@ -1,0 +1,121 @@
+footer{
+    background-color: rgb(30, 167, 167);
+    padding: 60px 10px;
+}
+
+#rodape_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: center;
+}
+
+#rodape_info{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+#rodape_logo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#rodape_logo img{
+    width: 250px;
+}
+
+#rodape_contato{
+    width: 50%;;
+}
+
+.icon-link-revert{
+    display: inline-block;
+    color: rgb(30, 167, 167);
+    font-size: 1.5em;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: .3s;
+    margin: 0px 10px;
+}
+
+.icon-link-revert:hover{
+    background-color: rgb(30, 167, 167);
+    color: #fff;
+    border: 1px solid #eee9e9;
+    transform: translateY(-3px);
+}
+
+#rodape_endereco, 
+#rodape_endereco_mobile {
+    font-size: 1.1em;
+    margin-top: 30px;
+    color: white;
+}
+
+#rodape_endereco_mobile{
+    display: none;
+}
+
+#rodape_copy,
+#rodape_copy_mobile{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#rodape_copy_mobile{
+    display: none;
+}
+
+.meus-icones{
+    color: white;
+}
+
+.meus-icones:hover{
+border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 1050px){
+    #rodape_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            gap: 30px;
+    }
+
+    #rodape_contato{
+        display: flex;
+        justify-content: center;
+    }
+
+    #rodape_endereco{
+        display: none;
+    }
+
+    #rodape_endereco_mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rodape_copy{
+        display: none;
+    }
+
+    #rodape_copy_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
