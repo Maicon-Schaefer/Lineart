@@ -57,16 +57,22 @@ ScrollReveal().reveal('#sobre_info', {
     distance: '20%'
 })
 
+const telaGrande = window.innerWidth > 1050;
+
 ScrollReveal().reveal('.l', {
     origin: 'right',
     duration: duracaoAnimacao,
-    distance: '10%'
+    distance: '10%',
+    viewFactor: telaGrande ? 0.3 : 0,   // 0.2 é o padrão de antes
+    viewOffset: { top: 0, bottom: telaGrande ? 20 : 0 }
 })
 
 ScrollReveal().reveal('.r', {
     origin: 'left',
     duration: duracaoAnimacao,
-    distance: '10%'
+    distance: '10%',
+    viewFactor: telaGrande ? 0.3 : 0,
+    viewOffset: { top: 0, bottom: telaGrande ? 20 : 0 }
 })
 
 ScrollReveal().reveal('#portfolio', {
