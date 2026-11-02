@@ -6,27 +6,35 @@
 .item-servico{
     display: flex;
     align-items: center;
+    justify-content: center;   /* centraliza o conjunto */
+    gap: 80px;
+    width: 90%;
+    max-width: 1100px;
     margin: 0 auto;
-    width: 50%;
-    gap: 60px;
-    padding: 40px 0px;
+    padding: 60px 0;
 }
 
+
 .item-img{
-    width: 50%;
+    flex: 0 1 500px;   /* quer 500px, mas encolhe se precisar */
+    min-width: 0;
 }
 
 .item-img img{
-    width: 400px;
-    height: 350px;
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 10 / 9;
+    object-fit: cover;
     border-radius: 10px;
-    object-fit: cover; 
-    object-position: center;
 }
 
 .item-info{
-    font-size: 1.1em;
-    width: 50%;
+    flex: 1;                   /* o texto ocupa o resto */
+    max-width: 450px;
+    min-width: 350PX;
+    font-size: 1.2em;
 }
 
 .item-info h2{
@@ -36,6 +44,10 @@
 
 .row-reverse{
     flex-direction: row-reverse;
+}
+
+.row-reverse .item-img{
+    justify-content: flex-end;
 }
 
 @media screen and (max-width: 1500px) {
@@ -50,23 +62,30 @@
     }
 
     .item-servico{
-        width: 100%;
+        
+        width: 100%;               /* ADICIONE: anula o 70% do bloco de 1500px */
         flex-direction: column-reverse;
-        padding-top: 140px;
         text-align: center;
         gap: 10px;
-        padding: 40px;
+        padding: 30px 15px;
     }
 
     .item-img{
-        width: 70%;
+        flex: none;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .row-reverse .item-img{
+        justify-content: center;
     }
 
     .item-img img{
-        width: 500px;
-        height: 400px;
-        object-fit: cover; 
-        object-position: center;
+         flex: none;
+        width: 100%;
+        max-width: 500px;
+        justify-content: center;
     }
 
     .item-servico h2{
@@ -77,22 +96,28 @@
     .item-servico p{
         display: none;
     }
+
+        .item-info{
+        flex: none;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 740px){
     .item-img, 
     .item-info{
-        width: 100%;
+        width: 90%;
     }
 
     .item-servico{
-        padding: 40px 10px;
+      padding: 30px 10px;   /* menos espaço nas laterais */
     }
 
     .item-img img{
-        width: 350px;
-        height: 300px;
-        object-fit: cover; 
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
         object-position: center;
     }
 
