@@ -35,7 +35,7 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
     if (!entry.isIntersecting) return;
     const links = document.querySelectorAll(`a[href="#${entry.target.id}"]`);
-    if (!links.length) return; // seção sem link no menu
+    if (!links.length) return; 
     document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
     links.forEach(l => l.parentElement.classList.add('active'));
     });
@@ -63,7 +63,7 @@ ScrollReveal().reveal('.l', {
     origin: 'right',
     duration: duracaoAnimacao,
     distance: '10%',
-    viewFactor: telaGrande ? 0.3 : 0,   // 0.2 é o padrão de antes
+    viewFactor: telaGrande ? 0.3 : 0,  
     viewOffset: { top: 0, bottom: telaGrande ? 20 : 0 }
 })
 
