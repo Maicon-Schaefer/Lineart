@@ -161,10 +161,29 @@
     opacity: 0.08;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
+    #home{
+        padding-top: 150px;     
+        padding-bottom: 80px;   
+        gap: 40px;
+    }
+
+    #home_info{
+        flex: 1;            
+    }
+
+    #home_img{
+        flex: none;
+        width: auto;
+    }
+
+    .carrossel{
+        width: 500px; 
+    }
+
     #home_info .home-titulo{
         font-size: 2.2em;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 
     #home_info .home-subtitulo{
@@ -178,6 +197,14 @@
 
     #home_info .btn-default{
         font-size: 1.2em;
+    }
+
+    #home_info .btn-default-modificado{
+        margin-top: 30px;
+    }
+
+    .home_redes-sociais{
+        margin-top: 25px;
     }
 
     .icon-link{
