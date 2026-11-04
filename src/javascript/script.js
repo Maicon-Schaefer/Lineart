@@ -43,43 +43,45 @@ const observer = new IntersectionObserver((entries) => {
 
 secoes.forEach(secao => observer.observe(secao));
 
-const duracaoAnimacao = window.innerWidth < 768 ? 500 : 2000;
+const naoEhCelular = window.matchMedia('(min-width: 741px)').matches;
 
-ScrollReveal().reveal('#home_info', {
-    origin: 'left',
-    duration: 2000,
-    distance: '2%'
-})
+if (typeof ScrollReveal !== 'undefined' && naoEhCelular) {
+    const telaGrande = window.innerWidth > 1050;
 
-ScrollReveal().reveal('#sobre_info', {
-    origin: 'right',
-    duration: 2000,
-    distance: '20%'
-})
+    ScrollReveal().reveal('#home_info', {
+        origin: 'left',
+        duration: 2000,
+        distance: '2%'
+    });
 
-const telaGrande = window.innerWidth > 1050;
+    ScrollReveal().reveal('#sobre_info', {
+        origin: 'right',
+        duration: 2000,
+        distance: '20%'
+    });
 
-ScrollReveal().reveal('.l', {
-    origin: 'right',
-    duration: duracaoAnimacao,
-    distance: '10%',
-    viewFactor: telaGrande ? 0.3 : 0,  
-    viewOffset: { top: 0, bottom: telaGrande ? 20 : 0 }
-})
+    ScrollReveal().reveal('.l', {
+        origin: 'right',
+        duration: 2000,
+        distance: '10%',
+        viewFactor: telaGrande ? 0.3 : 0,
+        viewOffset: { top: 0, bottom: telaGrande ? 20 : 0 }
+    });
 
-ScrollReveal().reveal('.r', {
-    origin: 'left',
-    duration: duracaoAnimacao,
-    distance: '10%',
-    viewFactor: telaGrande ? 0.3 : 0,
-    viewOffset: { top: 0, bottom: telaGrande ? 20 : 0 }
-})
+    ScrollReveal().reveal('.r', {
+        origin: 'left',
+        duration: 2000,
+        distance: '10%',
+        viewFactor: telaGrande ? 0.3 : 0,
+        viewOffset: { top: 0, bottom: telaGrande ? 20 : 0 }
+    });
 
-ScrollReveal().reveal('#portfolio', {
-    origin: 'left',
-    duration: 2000,
-    distance: '2%'
-})
+    ScrollReveal().reveal('#portfolio', {
+        origin: 'left',
+        duration: 2000,
+        distance: '2%'
+    });
+}
 
 const carrossel = document.querySelector('.carrossel');
 
